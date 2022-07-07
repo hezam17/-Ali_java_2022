@@ -28,9 +28,7 @@ public class Main {
         System.out.println(Arrays.toString(nums));
 
         //assign back to original array
-        for (int i=0; i<nums.length; i++) {
-            nums[i] = res[i];
-        }
+        System.arraycopy(res, 0, nums, 0, nums.length);
         System.out.println("after");
         System.out.println(Arrays.toString(nums));
     }
